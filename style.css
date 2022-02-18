@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: arizonia;
+  src: url(fonts/Arizonia-Regular.ttf);
+  font-family: kaushan;
+  src: url(fonts/KaushanScript-Regular.ttf);
+  font-family: rouge;
+  src: url(fonts/RougeScript-Regular.ttf);
+  font-family: sail;
+  src: url(fonts/Sail-Regular.ttf);
+}
+#tomato {
+  display: inline;
+  max-height: 1em;
+  max-width: 1em;
+  height: auto;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-bottom: -1;
+}
+.heading {
+  background-color: black;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: url(images/pizza-landscape.jpg);
+  /* background-color: cyan; */
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#title {
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+  
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.respic > p {
+  text-align: center;
+  color: white;
+  text-shadow: orchid;
+}
+.burger {
+  display: block;
+  margin: auto;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+.foot {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  left: 0%;
+  right: 0%;
+}
+
+.foot > p > img {
+  max-height: 1.5em;
+  /* display: block; */
+  margin-bottom: -4px;
+
+  background-size: 80% auto;
+}
+.foot > p {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  width: 98%;
+
+  line-height: 2rem;
+  width: 100%;
+}
+#menulink {
+  background-color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+table {
+  
+  font-family: sail, kaushan, arizonia, rouge;
+  font-size:1.1em ;
+  width: clamp(90px,60vw,300px);
+  height: clamp(40px,60vh, 500px);
+  border-radius: 5px;
+  border-color: black;
+  margin: 0 auto;
+  background: linear-gradient(to bottom,cyan, hotpink 50%) ;
+  /* border-style:outset; */
+  
+
+}
+thead {
+  text-align: center;
+  
+}
+th,
+td {
+  border-width: 1px;
+  /* border-style: groove none none groove; */ 
+  border: .5px, solid, black;
+  
+  border-bottom: 1px solid;
+  border-bottom-color:black;
+  
+}
+
+td:nth-of-type(2n-1) {
+  border-width: 100%;
+  border-right: 1px solid;
+}
+#posho > td {
+  border-bottom: none;
+}
+span > hr {
+  display: inline-block;
+}
+form {
+  width: 100%;
+  color:white;
+  height: 100%;
+  font-family:sail, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  
+  
+}
+.form {
+  line-height: 2em;
+  font-size: 1.2em;
+  box-sizing:content-box;
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.473), rgba(255, 255, 255, 0.055) 50%);
+  border-radius: 20px;
+  width:max-content;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.bradius {
+  font-size: .8em;
+  line-height: 2em;
+  border-radius: 5px;
+  background-color: plum;
+  border-color: black;
+  border-width: 1px;
+  border-style:solid;
+  /* margin: 10px; */
+  color:green;
+  font-family:'Helvetica Neue', sans-serif;
+  
+}
+#test {
+  font-family:'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: right;
+  border: 1px solid black;
+  background: rgb(0, 0, 0);
+  color: white;
+
+
+
+}
+
+#test a {
+  color:white;
+  text-decoration-line: none;
+}
+hr {
+  color:white;
+  background:black;
+  border-width: 1px;
+  border-style: solid;
+}
